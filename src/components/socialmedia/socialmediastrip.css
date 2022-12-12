@@ -1,0 +1,54 @@
+.social-media-strip {
+  left: 10%;
+  bottom: 25%;
+  position: fixed;
+  display: flex;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.social-icons-scrolled {
+  transform: rotateZ(-90deg);
+}
+
+.social-icons {
+  height: 60px;
+  width: 60px;
+  color: rgb(255, 255, 255);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  box-shadow: 0 0 0.5rem 0 black;
+}
+
+.social-icons:hover {
+  box-shadow: 0.2rem 0.2rem 1rem 0 black;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.mail-icon {
+  background-color: rgb(221, 75, 57);
+}
+
+.git-icon {
+  background-color: rgb(0, 0, 0);
+}
+
+.linkedin-icon {
+  background-color: rgb(0, 123, 182);
+}
+
+.medium-icon {
+  background-color: rgb(177, 145, 0);
+}
+
+.youtube-icon {
+  background-color: rgb(187, 0, 0);
+}
+
+.insta-icon {
+  background-color: rgb(188, 42, 141);
+}
