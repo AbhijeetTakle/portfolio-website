@@ -72,11 +72,7 @@
   top: 10%;
   overflow-y: hidden;
   border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
-  background-image: linear-gradient(
-    50deg,
-    rgb(148, 44, 44),
-    rgba(0, 0, 0, 0.774)
-  );
+  background-image: linear-gradient(50deg, #00aaa9, #28161c);
   /* box-shadow: 1rem -1.5rem 1rem gold; */
   animation-duration: 10s;
   animation-iteration-count: infinite;
