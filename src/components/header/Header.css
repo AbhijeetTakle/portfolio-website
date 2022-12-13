@@ -70,7 +70,7 @@
   height: 90%;
   width: 100%;
   top: 10%;
-  overflow-y: hidden;
+  overflow: hidden;
   border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
   background-image: linear-gradient(50deg, #00aaa9, #28161c);
   /* box-shadow: 1rem -1.5rem 1rem gold; */
