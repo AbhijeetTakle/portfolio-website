@@ -1,0 +1,19 @@
+.project-link-container {
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link-container a {
+  color: aliceblue;
+}
+
+.demo-btn {
+  background-color: rgb(19, 153, 108);
+}
+
+.code-btn {
+  background-color: rgb(65, 69, 69);
+}

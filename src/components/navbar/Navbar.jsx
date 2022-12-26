@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/images/A3.png";
 const Navbar = () => {
+  const navLinksSpread = (e) => {
+    const ele = document.querySelector(".nav-links-container");
+    ele.style.display = ele.style.display == "none" ? "flex" : "none";
+  };
+
   return (
     <div className="navbar-container">
       <div className="main-logo-container">
@@ -26,7 +31,7 @@ const Navbar = () => {
             <span className="underline-effect"></span>
           </li>
           <li className="nav-link">
-            <div className="nav-link-text">Work Ex</div>
+            <div className="nav-link-text">Work Exp.</div>
             <span className="underline-effect"></span>
           </li>
           <li className="nav-link">
@@ -38,6 +43,11 @@ const Navbar = () => {
       <div className="nav-extra">
         <div className="login-btn">
           <span className="login-text">Log In</span>
+        </div>
+        <div className="nav-links-folded" onClick={navLinksSpread}>
+          <div className="folded-divs"></div>
+          <div className="folded-divs"></div>
+          <div className="folded-divs"></div>
         </div>
       </div>
     </div>

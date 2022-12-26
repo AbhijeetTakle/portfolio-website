@@ -74,7 +74,7 @@
   border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
   background-image: linear-gradient(50deg, #00aaa9, #28161c);
   /* box-shadow: 1rem -1.5rem 1rem gold; */
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-name: blink;
 }
@@ -105,7 +105,7 @@
   top: 3%;
   left: 25%;
   height: 45rem;
-  width: 25rem;
+  /* width: 25rem; */
   object-fit: cover;
 }
 
@@ -113,4 +113,51 @@
   width: 100%;
   height: 20%;
   /* background-color: rgb(68, 206, 206); */
+}
+
+@media screen and (max-width: 821px) {
+  .header-title h1 {
+    font-size: 4rem;
+  }
+
+  .header-title-container {
+    width: 50%;
+  }
+
+  .header-image-container {
+    width: 50%;
+  }
+
+  .header-blob {
+    top: 20%;
+    height: 60%;
+  }
+
+  .header-image {
+    height: 35rem;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .main-header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .header-title-container {
+    width: 100%;
+  }
+
+  .header-image-container {
+    width: 100%;
+  }
+
+  .header-blob {
+    height: 90%;
+    top: 10%;
+  }
+
+  .header-image {
+    height: 25rem;
+  }
 }
