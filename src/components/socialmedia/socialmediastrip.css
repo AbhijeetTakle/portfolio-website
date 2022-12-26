@@ -52,3 +52,15 @@
 .insta-icon {
   background-color: rgb(188, 42, 141);
 }
+
+@media screen and (max-width: 416px) {
+  .social-media-strip {
+    left: 12%;
+    bottom: 15%;
+  }
+  .social-icons {
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+  }
+}

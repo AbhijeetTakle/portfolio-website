@@ -7,6 +7,7 @@
   color: aliceblue;
   font-family: "Lato", sans-serif;
   font-weight: 100;
+  z-index: 3;
 }
 
 .main-logo-container {
@@ -96,4 +97,71 @@
   color: rgb(255, 255, 255);
   cursor: pointer;
   box-shadow: 0rem 0rem 1rem 0.1rem #00aaa9;
+}
+
+.nav-links-folded {
+  display: none;
+}
+
+@media screen and (min-width: 820px) {
+  .nav-links-container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .navbar-container {
+    grid-template-columns: 3fr 9fr;
+  }
+
+  .nav-links-container {
+    display: none;
+    position: absolute;
+    height: 500px;
+    width: 80%;
+    right: 3%;
+    top: 15%;
+    background-color: #252424ea;
+  }
+
+  .nav-links {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(6, 2fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-extra {
+    justify-content: end;
+    padding-right: 2rem;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .nav-links-folded {
+    display: flex;
+    height: 70%;
+    width: 4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    z-index: 4;
+  }
+
+  .nav-links-folded:active {
+    background-color: #282828;
+  }
+
+  .folded-divs {
+    background-color: aliceblue;
+    height: 15%;
+    width: 80%;
+    border-radius: 2rem;
+  }
 }

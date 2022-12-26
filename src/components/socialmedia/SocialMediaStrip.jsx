@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./socialmediastrip.css";
 import { SiGmail } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
@@ -8,12 +8,19 @@ import { BsYoutube } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 
 const SocialMediaStrip = () => {
-  const scrollPercentage = async () => {
+  const scrollPercentage = (e) => {
     setTimeout(() => {}, 3000);
-    const scrolled = await window.scrollY;
+    const scrolled = window.scrollY;
     let scrollPercent = (scrolled - 100) / 400;
     const strip = document.querySelector(".social-media-strip");
     const eles = document.querySelectorAll(".social-icons");
+
+    if (window.screen.width <= 821 && scrolled >= 50) {
+      strip.style.display = "none";
+      return;
+    } else {
+      strip.style.display = "flex";
+    }
     if (scrolled > 0 && scrolled <= 100) {
       strip.style.transform = `translateY(-${0}px) translateX(-${
         80 * scrollPercent
@@ -37,7 +44,9 @@ const SocialMediaStrip = () => {
       });
     }
   };
-  window.onscroll = scrollPercentage;
+  useEffect(() => {
+    window.addEventListener("scroll", scrollPercentage);
+  }, []);
 
   return (
     <div className="social-media-strip">
