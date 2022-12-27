@@ -34,7 +34,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="projects-container">
+    <section className="projects-container" id="projects">
       <div className="projects-list-container">
         <div className="projects-list" onScroll={projectListScrollEvent}>
           <Project

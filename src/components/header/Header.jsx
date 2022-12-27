@@ -1,11 +1,11 @@
 import React from "react";
 import "./Header.css";
 import ProfileImage from "../../assets/images/prof-img2.png";
-import BackgroudVideo from "../../assets/videos/dots.mp4";
+// import BackgroudVideo from "../../assets/videos/dots.mp4";
 
 const Header = () => {
   return (
-    <div className="header-hero">
+    <div className="header-hero" id="header">
       {/* <video
         className="back-video"
         muted
