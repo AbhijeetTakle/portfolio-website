@@ -23,10 +23,21 @@
   box-shadow: 0 0 0.5rem 0 black;
 }
 
+.social-icons > a {
+  height: 40px;
+  width: 40px;
+  color: white;
+}
+
 .social-icons:hover {
   box-shadow: 0.2rem 0.2rem 1rem 0 black;
   font-size: 3rem;
   cursor: pointer;
+}
+
+.social-icons:hover > a {
+  height: 48px;
+  width: 48px;
 }
 
 .mail-icon {
@@ -53,7 +64,7 @@
   background-color: rgb(188, 42, 141);
 }
 
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 450px) {
   .social-media-strip {
     left: 12%;
     bottom: 15%;
@@ -62,5 +73,18 @@
     height: 40px;
     width: 40px;
     font-size: 2rem;
+  }
+  .social-icons > a {
+    height: 32px;
+    width: 32px;
+  }
+
+  .social-icons:hover {
+    font-size: 2.1rem;
+  }
+
+  .social-icons:hover > a {
+    height: 32px;
+    width: 32px;
   }
 }

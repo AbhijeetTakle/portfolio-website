@@ -138,7 +138,7 @@
   }
 }
 
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 450px) {
   .main-header {
     flex-direction: column-reverse;
     text-align: center;

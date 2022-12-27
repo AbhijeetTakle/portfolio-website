@@ -1,41 +1,55 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Navbar.css";
 import Logo from "../../assets/images/A3.png";
 const Navbar = () => {
   const navLinksSpread = (e) => {
     const ele = document.querySelector(".nav-links-container");
-    ele.style.display = ele.style.display == "none" ? "flex" : "none";
+    ele.style.display = ele.style.display === "none" ? "flex" : "none";
   };
 
   return (
     <div className="navbar-container">
       <div className="main-logo-container">
-        <img className="main-logo" src={Logo} alt="Abhijeet Nana Takle" />
+        <a href="#header">
+          <img className="main-logo" src={Logo} alt="Abhijeet Nana Takle" />
+        </a>
       </div>
       <div className="nav-links-container">
         <ul className="nav-links">
           <li className="nav-link">
-            <div className="nav-link-text">About</div>
+            <a href="#projects">
+              <div className="nav-link-text">Projects</div>
+            </a>
             <span className="underline-effect"></span>
           </li>
           <li className="nav-link">
-            <div className="nav-link-text">Projects</div>
+            <a href="#skills">
+              <div className="nav-link-text">Skills</div>
+            </a>
             <span className="underline-effect"></span>
           </li>
           <li className="nav-link">
-            <div className="nav-link-text">Skills</div>
+            <a href="education">
+              <div className="nav-link-text">Education</div>
+            </a>
             <span className="underline-effect"></span>
           </li>
           <li className="nav-link">
-            <div className="nav-link-text">Education</div>
+            <a href="#work">
+              <div className="nav-link-text">Work Exp.</div>
+            </a>
             <span className="underline-effect"></span>
           </li>
           <li className="nav-link">
-            <div className="nav-link-text">Work Exp.</div>
+            <a href="#about">
+              <div className="nav-link-text">About</div>
+            </a>
             <span className="underline-effect"></span>
           </li>
           <li className="nav-link">
-            <div className="nav-link-text">Contacts</div>
+            <a href="#contacts">
+              <div className="nav-link-text">Contacts</div>
+            </a>
             <span className="underline-effect"></span>
           </li>
         </ul>

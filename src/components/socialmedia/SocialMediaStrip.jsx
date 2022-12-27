@@ -51,22 +51,54 @@ const SocialMediaStrip = () => {
   return (
     <div className="social-media-strip">
       <div className="mail-icon social-icons">
-        <SiGmail />
+        <a href="mailto:abhijeettakle35@gmail.com">
+          <SiGmail />
+        </a>
       </div>
       <div className="git-icon social-icons">
-        <VscGithub />
+        <a
+          rel="noopener noreferrer"
+          href="https://github.com/AbhijeetTakle"
+          target="_blank"
+        >
+          <VscGithub />
+        </a>
       </div>
       <div className="linkedin-icon social-icons">
-        <TfiLinkedin />
+        <a
+          rel="noopener noreferrer"
+          href="https://in.linkedin.com/in/abhijeet-takle-139b1b193"
+          target="_blank"
+        >
+          <TfiLinkedin />
+        </a>
       </div>
       <div className="medium-icon social-icons">
-        <GrMedium />
+        <a
+          rel="noopener noreferrer"
+          href="https://medium.com/@abhijeettakle35"
+          target="_blank"
+        >
+          <GrMedium />
+        </a>
       </div>
       <div className="youtube-icon social-icons">
-        <BsYoutube />
+        <a
+          rel="noopener noreferrer"
+          href="https://www.youtube.com/channel/UCBu9vInFe1j9DPd9BE0NVyw"
+          target="_blank"
+        >
+          <BsYoutube />
+        </a>
       </div>
       <div className="insta-icon social-icons">
-        <FaInstagram />
+        <a
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/_abhijeettakle/"
+          target="_blank"
+        >
+          <FaInstagram />
+        </a>
       </div>
     </div>
   );
