@@ -5,9 +5,20 @@
   display: grid;
   grid-template-columns: 3fr 6fr 3fr;
   color: aliceblue;
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  font-weight: 50;
   z-index: 3;
+  background-color: transparent;
+}
+
+.blur-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: -2;
+  backdrop-filter: saturate(180%) blur(8px);
+  backface-visibility: hidden;
 }
 
 .nav-link > a {
@@ -15,7 +26,6 @@
 }
 
 .main-logo-container {
-  /* font-family: "Vollkorn", serif; */
   font-size: 1.5rem;
   height: 100%;
   width: 100%;
@@ -24,9 +34,9 @@
 }
 
 .main-logo {
-  height: 80%;
-  width: 80px;
-  margin-left: 5%;
+  height: 60px;
+  width: 60px;
+  margin-left: 50%;
   object-fit: contain;
 }
 
@@ -53,15 +63,16 @@
 
 .nav-link-text {
   transition-duration: 1s;
+  font-size: 20px;
 }
 
 .underline-effect {
   border-radius: 5rem;
-  transition-duration: 01s;
+  transition-duration: 1s;
   width: 5%;
-  height: 5px;
+  height: 1px;
   background-color: #00aaa9;
-  box-shadow: 0rem 0rem 1rem 0.2rem #00aaa9;
+  box-shadow: 0rem 0rem rem 0.1rem #00aaa9;
 }
 
 .nav-link:hover .underline-effect {
@@ -71,8 +82,6 @@
 
 .nav-link:hover {
   cursor: pointer;
-  font-size: 1.6rem;
-  text-shadow: 0rem -0.5rem 1rem rgb(255, 255, 255);
 }
 
 .nav-extra {
@@ -83,8 +92,8 @@
 
 .login-btn {
   background-color: #00aaa9;
-  width: 25%;
-  height: 50%;
+  width: 20%;
+  height: 40%;
   color: rgb(255, 255, 255);
   border-radius: 0.5rem;
   display: flex;
@@ -96,11 +105,7 @@
 }
 
 .login-btn:hover {
-  font-size: 1.6rem;
-  background-color: #00aaa9;
-  color: rgb(255, 255, 255);
   cursor: pointer;
-  box-shadow: 0rem 0rem 1rem 0.1rem #00aaa9;
 }
 
 .nav-links-folded {
