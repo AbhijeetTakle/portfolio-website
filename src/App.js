@@ -8,11 +8,11 @@ import SocialMediaStrip from "./components/socialmedia/SocialMediaStrip";
 function App() {
   return (
     <div className="App">
-      <SocialMediaStrip />
+      {/* <SocialMediaStrip /> */}
       <Navbar />
       <Header />
       <Projects />
-      <Skills />
+      {/* <Skills /> */}
     </div>
   );
 }

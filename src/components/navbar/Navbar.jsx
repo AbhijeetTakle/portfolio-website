@@ -17,6 +17,12 @@ const Navbar = () => {
       <div className="nav-links-container">
         <ul className="nav-links">
           <li className="nav-link">
+            <a href="#">
+              <div className="nav-link-text">About</div>
+            </a>
+            <span className="underline-effect"></span>
+          </li>
+          <li className="nav-link">
             <a href="#projects">
               <div className="nav-link-text">Projects</div>
             </a>
@@ -29,26 +35,14 @@ const Navbar = () => {
             <span className="underline-effect"></span>
           </li>
           <li className="nav-link">
-            <a href="education">
-              <div className="nav-link-text">Education</div>
-            </a>
-            <span className="underline-effect"></span>
-          </li>
-          <li className="nav-link">
             <a href="#work">
               <div className="nav-link-text">Work Exp.</div>
             </a>
             <span className="underline-effect"></span>
           </li>
           <li className="nav-link">
-            <a href="#about">
-              <div className="nav-link-text">About</div>
-            </a>
-            <span className="underline-effect"></span>
-          </li>
-          <li className="nav-link">
             <a href="#contacts">
-              <div className="nav-link-text">Contacts</div>
+              <div className="nav-link-text">Contact</div>
             </a>
             <span className="underline-effect"></span>
           </li>
@@ -56,7 +50,7 @@ const Navbar = () => {
       </div>
       <div className="nav-extra">
         <div className="login-btn">
-          <span className="login-text">Log In</span>
+          <span className="login-text">Login</span>
         </div>
         <div className="nav-links-folded" onClick={navLinksSpread}>
           <div className="folded-divs"></div>

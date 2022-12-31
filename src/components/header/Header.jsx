@@ -1,26 +1,38 @@
 import React from "react";
 import "./Header.css";
 import ProfileImage from "../../assets/images/prof-img2.png";
-// import BackgroudVideo from "../../assets/videos/dots.mp4";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const Header = () => {
   return (
     <div className="header-hero" id="header">
-      {/* <video
-        className="back-video"
-        muted
-        autoPlay
-        loop
-        playsInline
-        src={BackgroudVideo}
-      ></video> */}
       <div className="header-container">
         <div className="main-header">
           <div className="header-title-container">
             <div className="header-title">
-              <h2>Hello, I'm</h2>
-              <h1>Abhijeet Nana Takle</h1>
-              <h2>a Web Developer.</h2>
+              <h2>hello, I'm</h2>
+              <h1>
+                Abhijeet<span className="head-dot">.</span>Nana
+                <span className="head-dot">.</span> Takle
+                <span className="head-dot">.</span>
+              </h1>
+              <h2 className="red-title">a web developer.</h2>
+              <p>
+                Strong in development and integration with intuitive
+                problem-solving skills. Proficient in mordern web development
+                tech stack. Self-motivated and hardworking, seeking for an
+                opportunity to work in a challenging environment to utilize my
+                skills, knowledge & intelligence in the growth of an important
+                product with wider impact radius.
+              </p>
+              <a
+                className="resume-down"
+                href="https://drive.google.com/file/d/1ecaLBjQc8t8fBIx2jXWxj1eWZ5vmGuav/view?usp=sharing"
+                target="_blank"
+              >
+                <div className="resume-dtext">resume</div>
+                <FaArrowAltCircleRight />
+              </a>
             </div>
           </div>
           <div className="header-image-container">
