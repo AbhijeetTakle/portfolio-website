@@ -64,6 +64,7 @@ const Navbar = () => {
           <div className="folded-divs"></div>
         </div>
       </div>
+      <div className="blur-background"></div>
     </div>
   );
 };
