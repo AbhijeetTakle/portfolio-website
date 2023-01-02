@@ -1,0 +1,133 @@
+.float-window-container {
+  position: absolute;
+  width: 80%;
+  height: 95%;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.489);
+  z-index: 4;
+  border-radius: 1rem;
+  display: none;
+}
+
+.float-window {
+  font-family: "roboto", sans-serif;
+  --width-video: calc(width);
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  height: 85vh;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  animation-name: loadwindow;
+  animation-duration: 1.7s;
+  animation-timing-function: ease;
+}
+
+@keyframes loadwindow {
+  from {
+    left: -60%;
+  }
+  to {
+    left: 30%;
+  }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0%;
+  padding-bottom: 62.25%;
+}
+
+.video-container > iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.info-title-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.info-title {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  padding: 1rem;
+}
+
+.info-container {
+  color: white;
+  padding: 0 1rem;
+  white-space: pre-wrap;
+}
+
+.project-head {
+  font-size: 18px;
+  text-decoration-color: white;
+  text-decoration-line: underline;
+  margin: 1%;
+}
+
+.source-links {
+  width: fit-content;
+  background-color: rgb(236, 194, 9);
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  padding: 0 8px;
+  font-size: 20px;
+  color: black;
+  border-radius: 2rem;
+  gap: 3px;
+  justify-content: center;
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.source-links > svg {
+  width: 0;
+  transition-property: width;
+  transition-duration: 1s;
+}
+.source-links:hover {
+  background-color: #007cf0;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+}
+
+.source-links:hover > svg {
+  width: 30px;
+}
+
+.float-relax {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  left: 70%;
+  color: white;
+  font-size: 40px;
+  animation-name: loadcross;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+.float-relax:hover {
+  cursor: pointer;
+}
+
+@keyframes loadcross {
+  from {
+    left: -40%;
+  }
+  to {
+    left: 70%;
+  }
+}
