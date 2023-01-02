@@ -172,6 +172,11 @@
     text-align: center;
     align-items: center;
   }
+
+  .header-title {
+    align-items: center;
+  }
+
   .header-title h1 {
     font-size: 4rem;
     line-height: 4rem;
