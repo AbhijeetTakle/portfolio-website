@@ -8,8 +8,12 @@ const FloatingWindow = (props) => {
     e.preventDefault();
     const classwin = ".win-" + e.target.classList[1];
     const projectwindow = document.querySelector(classwin);
-    console.log(projectwindow);
     projectwindow.style.display = "none";
+    var iframe = projectwindow.querySelector("iframe");
+    if (iframe) {
+      var iframeSrc = iframe.src;
+      iframe.src = iframeSrc;
+    }
   };
   return (
     <div className={"float-window-container " + "win-" + props.projectNumber}>
@@ -26,7 +30,13 @@ const FloatingWindow = (props) => {
           ></iframe>
         </div>
         <div className="info-title-container">
-          <h1 className="info-title">{props.projectTitle}</h1>
+          <a
+            href={props.projectLiveLink}
+            target="_blank"
+            className="info-title"
+          >
+            {props.projectTitle}
+          </a>
           <a className="source-links" href={props.projectLink1} target="_blank">
             <div className="resume-dtext">{props.projectLinkTitle1}</div>
             <FaArrowAltCircleRight />

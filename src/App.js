@@ -11,8 +11,8 @@ function App() {
       {/* <SocialMediaStrip /> */}
       <Navbar />
       <Header />
+      <Skills />
       <Projects />
-      {/* <Skills /> */}
     </div>
   );
 }

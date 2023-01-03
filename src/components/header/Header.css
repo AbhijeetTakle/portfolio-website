@@ -24,7 +24,7 @@
 .main-header {
   position: relative;
   width: 80%;
-  height: 80%;
+  height: 95%;
   left: 10%;
   /* background-color: aqua; */
   display: flex;
@@ -120,7 +120,7 @@
 
 .header-blob {
   position: relative;
-  height: 90%;
+  height: 70%;
   width: 100%;
   top: 10%;
   overflow: hidden;
@@ -206,7 +206,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 430px) {
   .header-title-container {
     width: 100%;
   }
@@ -221,7 +221,7 @@
   }
 
   .header-blob {
-    height: 90%;
+    height: 100%;
     top: 10%;
   }
 

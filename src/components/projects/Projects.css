@@ -37,11 +37,6 @@
     grid-template-rows: repeat(3, 4fr);
     grid-template-columns: repeat(2, 6fr);
   }
-
-  .float-window {
-    width: 100%;
-    left: 0;
-  }
   .projects-list-container {
     height: fit-content;
     background-color: rgb(10, 10, 10);
