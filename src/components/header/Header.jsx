@@ -18,12 +18,13 @@ const Header = () => {
               </h1>
               <h2 className="red-title">a web developer.</h2>
               <p>
-                Strong in development and integration with intuitive
-                problem-solving skills. Proficient in mordern web development
-                tech stack. Self-motivated and hardworking, seeking for an
-                opportunity to work in a challenging environment to utilize my
-                skills, knowledge & intelligence in the growth of an important
-                product with wider impact radius.
+                As a self taught programmer I have learned many technologies
+                with excitment. Strong in development and integration with
+                intuitive problem-solving skills. Proficient in mordern web
+                development tech stack. Self-motivated and hardworking, seeking
+                for an opportunity to work in a challenging environment to
+                utilize my skills, knowledge & intelligence in the growth of an
+                important product with wider impact radius.
               </p>
               <a
                 className="resume-down"
