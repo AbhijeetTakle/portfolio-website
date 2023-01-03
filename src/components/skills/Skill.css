@@ -1,41 +1,24 @@
 .skill-container {
-  background-color: rgba(0, 0, 0, 0.574);
-  width: 80%;
-  height: 70%;
-  font-size: 2rem;
-  border-radius: 2rem;
+  /* background-color: rgba(197, 197, 197, 0.428); */
+  width: 8rem;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.skill-container:hover {
-  font-size: 2.1rem;
-  text-shadow: 0.1rem 0.1rem white;
-}
-
-.skill-container > svg {
-  font-size: 4rem;
-}
-
-.skill-container:hover > svg {
-  filter: drop-shadow(0.4rem 0.4rem 0.1rem rgba(126, 24, 24, 0.4));
-  font-size: 5rem;
-}
-
 .skill-title-container {
   color: white;
   font-family: "Roberto", sans-serif;
+  font-weight: 100;
+}
+.skill-container > svg {
+  font-size: 5rem;
 }
 
 @media screen and (max-width: 821px) {
   .skill-container {
-    font-size: 1.2rem;
-  }
-
-  .skill-container:hover {
-    font-size: 1.5rem;
-    text-shadow: 0.1rem 0.1rem white;
+    width: 6rem;
   }
 }

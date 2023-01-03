@@ -61,6 +61,11 @@
   padding: 1rem;
 }
 
+.info-title-container:hover .info-title {
+  cursor: pointer;
+  color: #007cf0;
+}
+
 .info-container {
   color: white;
   padding: 0 1rem;
@@ -129,5 +134,34 @@
   }
   to {
     left: 70%;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .float-window {
+    width: 100%;
+    left: 0;
+  }
+
+  .float-relax {
+    left: 95%;
+  }
+
+  @keyframes loadcross {
+    from {
+      left: -40%;
+    }
+    to {
+      left: 95%;
+    }
+  }
+
+  @keyframes loadwindow {
+    from {
+      left: -60%;
+    }
+    to {
+      left: 0%;
+    }
   }
 }

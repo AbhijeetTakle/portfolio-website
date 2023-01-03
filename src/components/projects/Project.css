@@ -63,8 +63,9 @@
   color: white;
 }
 
-.project-title-container:hover {
+.project-title-container:hover .project-title {
   cursor: pointer;
+  color: yellow;
 }
 .arrow-project {
   font-size: 40px;
@@ -73,7 +74,7 @@
   transition-duration: 0.5s;
   transition-timing-function: ease-in;
   overflow: hidden;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   position: relative;
 }
 
@@ -112,10 +113,4 @@
   padding: 2rem;
   height: 80%;
   background-color: #0000006c;
-}
-
-@media screen and (max-width: 821px) {
-  .project-info-container {
-    grid-row: 2;
-  }
 }
