@@ -16,7 +16,7 @@ const FloatingWindow = (props) => {
     }
   };
   return (
-    <div className={"float-window-container " + "win-" + props.projectNumber}>
+    <div className={"float-window-container win-" + props.projectNumber}>
       <div className="float-window">
         <div className="video-container">
           <iframe
@@ -34,14 +34,25 @@ const FloatingWindow = (props) => {
             href={props.projectLiveLink}
             target="_blank"
             className="info-title"
+            rel="noreferrer"
           >
             {props.projectTitle}
           </a>
-          <a className="source-links" href={props.projectLink1} target="_blank">
+          <a
+            className="source-links"
+            href={props.projectLink1}
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="resume-dtext">{props.projectLinkTitle1}</div>
             <FaArrowAltCircleRight />
           </a>
-          <a className="source-links" href={props.projectLink2} target="_blank">
+          <a
+            className="source-links"
+            href={props.projectLink2}
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="resume-dtext">{props.projectLinkTitle2}</div>
             <FaArrowAltCircleRight />
           </a>
