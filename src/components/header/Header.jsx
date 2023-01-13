@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import ProfileImage from "../../assets/images/prof-img2.png";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const Header = () => {
@@ -39,7 +38,11 @@ const Header = () => {
           </div>
           <div className="header-image-container">
             <div className="header-blob">
-              <img className="header-image" src={ProfileImage} alt="Profile" />
+              <img
+                className="header-image"
+                src={"assets/images/prof-img2.png"}
+                alt="Profile"
+              />
             </div>
           </div>
         </div>

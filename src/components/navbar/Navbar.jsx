@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-import Logo from "../../assets/images/A3.png";
 const Navbar = () => {
   const navLinksSpread = (e) => {
     const ele = document.querySelector(".nav-links-container");
@@ -11,7 +10,11 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="main-logo-container">
         <a href="#header">
-          <img className="main-logo" src={Logo} alt="Abhijeet Nana Takle" />
+          <img
+            className="main-logo"
+            src={"assets/images/A3.png"}
+            alt="Abhijeet Nana Takle"
+          />
         </a>
       </div>
       <div className="nav-links-container">
