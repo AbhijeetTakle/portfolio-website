@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="nav-links-container">
         <ul className="nav-links">
           <li className="nav-link">
-            <a href="#">
+            <a href="#header">
               <div className="nav-link-text">About</div>
             </a>
             <span className="underline-effect"></span>

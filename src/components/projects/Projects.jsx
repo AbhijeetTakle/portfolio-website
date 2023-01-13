@@ -1,7 +1,6 @@
 import React from "react";
 import Project from "./Project";
 import "./Projects.css";
-import { FaArrowAltCircleRight } from "react-icons/fa";
 import FloatingWindow from "./FloatingWindow";
 
 const Projects = () => {

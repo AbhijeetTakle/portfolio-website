@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import ProjectLinkButton from "./ProjectLinkButton";
+import React from "react";
 import "./Project.css";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
@@ -36,16 +35,17 @@ const Project = (props) => {
             href={props.projectLiveLink}
             target="_blank"
             className="project-title"
+            rel="noreferrer"
           >
             {props.projectTitle}
           </a>
-          <a className="arrow-project ">
+          <div className="arrow-project ">
             <FaArrowAltCircleRight />
             <div
               className={"click-div " + props.projectNumber}
               onClick={floatinWindowToggle}
             ></div>
-          </a>
+          </div>
         </div>
       </div>
     </section>

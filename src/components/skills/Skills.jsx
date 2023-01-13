@@ -5,14 +5,12 @@ import {
   FaReact,
   FaHtml5,
   FaCss3,
-  FaSass,
   FaBootstrap,
   FaPython,
   FaNpm,
   FaFigma,
   FaDocker,
   FaAws,
-  FaJenkins,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import {
@@ -25,25 +23,18 @@ import {
   SiExpress,
   SiMongodb,
   SiMysql,
-  SiTypescript,
   SiCanva,
   SiAdobephotoshop,
   SiVisualstudiocode,
   SiNotion,
   SiRedux,
-  SiKubernetes,
-  SiMicrosoftazure,
-  SiGradle,
   SiHeroku,
   SiNetlify,
   SiSelenium,
-  SiDjango,
   SiCplusplus,
   SiC,
 } from "react-icons/si";
 import { FcLinux } from "react-icons/fc";
-import { TbBrandNextjs } from "react-icons/tb";
-import { GrGolang } from "react-icons/gr";
 
 const Skills = () => {
   return (

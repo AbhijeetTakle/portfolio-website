@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./socialmediastrip.css";
 import { SiGmail } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
