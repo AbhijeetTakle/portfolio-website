@@ -24,6 +24,7 @@ const Projects = () => {
       projectLinkTitle2: "back-end",
       projectNumber: "project-one",
       projectLiveLink: "https://github.com/AbhijeetTakle/animated-doodle",
+      projectImageLink: "assets/images/proj-1.png",
     },
     {
       projectTitle: "SocialLab",
@@ -41,6 +42,7 @@ const Projects = () => {
       projectLinkTitle2: "back-end",
       projectNumber: "project-two",
       projectLiveLink: "https://github.com/AbhijeetTakle/client",
+      projectImageLink: "assets/images/proj-2.png",
     },
   ];
   return (
@@ -125,13 +127,15 @@ const Projects = () => {
             projectNumber={projectDetails[0].projectNumber}
             projectDescription={projectDetails[0].projectDescription}
             projectLiveLink={projectDetails[0].projectLiveLink}
+            projectImageLink={projectDetails[0].projectImageLink}
           />
 
           <Project
             projectTitle={projectDetails[1].projectTitle}
             projectNumber={projectDetails[1].projectNumber}
             projectDescription={projectDetails[1].projectDescription}
-            projectLiveLink={projectDetails[0].projectLiveLink}
+            projectLiveLink={projectDetails[1].projectLiveLink}
+            projectImageLink={projectDetails[1].projectImageLink}
           />
           <Project
             comingSoon={true}

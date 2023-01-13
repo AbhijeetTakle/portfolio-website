@@ -21,7 +21,14 @@ const Project = (props) => {
         ""
       )}
       <div className="project-info-container">
-        <div className="project-description-container">
+        <div
+          className="project-description-container"
+          style={
+            props.projectImageLink != null
+              ? { backgroundImage: `url(${props.projectImageLink})` }
+              : { backgroundImage: `url("../../assets/images/imgbg.jpg")` }
+          }
+        >
           <p className="project-description">{props.projectDescription}</p>
         </div>
         <div className="project-title-container">

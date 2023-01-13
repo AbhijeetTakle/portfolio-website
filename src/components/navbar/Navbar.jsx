@@ -41,7 +41,7 @@ const Navbar = () => {
             <span className="underline-effect"></span>
           </li>
           <li className="nav-link">
-            <a href="#contacts">
+            <a href="#contact">
               <div className="nav-link-text">Contact</div>
             </a>
             <span className="underline-effect"></span>

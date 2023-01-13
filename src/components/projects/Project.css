@@ -2,7 +2,7 @@
   display: grid;
   position: relative;
   background-image: linear-gradient(150deg, #356796, #072dd7);
-  border-radius: 1rem;
+  border-radius: 2.5rem 0;
   overflow: hidden;
 }
 
@@ -32,7 +32,7 @@
   font-family: "Roboto", sans-serif;
   border-style: solid;
   border-width: 2px;
-  border-radius: 1rem;
+  border-radius: 2.5rem 0;
   background-color: rgb(11, 11, 11);
   border-color: transparent;
   background-clip: padding-box;
@@ -48,7 +48,13 @@
 }
 
 .project-title-container {
-  font-size: 1.5rem;
+  font-variant: small-caps;
+  font-weight: 600;
+  font-family: "Oswald", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 2rem;
+  text-decoration: underline;
   text-transform: capitalize;
   height: 10%;
   width: 90%;
@@ -99,8 +105,7 @@
   height: 80%;
   font-size: 1.2rem;
   border-radius: 2rem 2rem 0 0;
-  background-image: url("/home/abhijeet/Desktop/devdir/projects/webd/portfolio-website-mern/portfolio-website/src/assets/images/imgbg.jpg");
-  background-position: 0;
+  background-position: center;
   background-size: cover;
   backdrop-filter: blur(8px);
   backface-visibility: hidden;

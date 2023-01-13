@@ -24,12 +24,13 @@ const Header = () => {
                 development tech stack. Self-motivated and hardworking, seeking
                 for an opportunity to work in a challenging environment to
                 utilize my skills, knowledge & intelligence in the growth of an
-                important product with wider impact radius.
+                important product with a wider impact radius.
               </p>
               <a
                 className="resume-down"
                 href="https://drive.google.com/file/d/1ecaLBjQc8t8fBIx2jXWxj1eWZ5vmGuav/view?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div className="resume-dtext">resume</div>
                 <FaArrowAltCircleRight />
