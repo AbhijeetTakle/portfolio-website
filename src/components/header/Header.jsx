@@ -27,7 +27,7 @@ const Header = () => {
               </p>
               <a
                 className="resume-down"
-                href="https://drive.google.com/file/d/1ecaLBjQc8t8fBIx2jXWxj1eWZ5vmGuav/view?usp=sharing"
+                href="https://drive.google.com/file/d/1UYD7IzLDnTRRL0XJwrBr7JwseHBMIxTY/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
